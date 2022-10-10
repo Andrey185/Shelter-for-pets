@@ -1,556 +1,117 @@
-.big-logo {
-  position: absolute;
-  left: 40px;
-  top: 60px;
-  width: 184px;
-  height: 60px;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.capital-page {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
+    #211f20;
+}
+
+.header {
+  display: flex;
+  padding: 60px 40px;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.header__logo {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 110%;
   color: #f1cdb3;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.logo-explanation {
-  position: absolute;
-  width: 184px;
-  height: 15px;
-  left: 44px;
-  top: 105px;
+.title-explanation {
+  padding-top: 5px;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 15px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
-
-.nav-list {
-  display: flex;
-  justify-content: flex-end;
-  height: 62px;
-  align-items: center;
-  margin: 76px 40px;
+hgroup {
+  width: 30%;
+  min-width: 180px;
 }
 
-.nav__link {
-  /* подчеркивание не убирается */
+.header__nav {
+  width: 70%;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: flex-end;
   list-style-type: none;
+  gap: 35px;
+  /* text-decoration: none; почему не работает? */
+}
+
+.navigation__link {
+  padding-top: 16px;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
-  /* color: #cdcdcd;                       не работает */
-  margin: 0px 0px 0px 35px;
-}
-
-.image-pet {
-  position: absolute;
-  width: 698px;
-  height: 728px;
-  margin: -485px 40px 0px 542px;
-  /* с марджином что-то не то, сделал подбором */
+  /* color: #CDCDCD;   почему не работает? */
 }
 
 .greet {
-  position: absolute;
-  width: 460px;
-  height: 322px;
-  left: 40px;
-  top: 343px;
+  display: flex;
+  max-width: 1280px;
 }
 
+.greet__block {
+  max-width: 50%;
+  padding: 223px 42px 0px 40px;
+}
+/* сумма 110 %, иначе остается пространствво во флекс контейнере */
+
 .greet__title {
-  position: absolute;
-  width: 310px;
-  height: 114px;
-  margin: 0px 150px 208px 0px;
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 44px;
   line-height: 130%;
-  display: flex;
-  align-items: center;
   color: #ffffff;
 }
 
 .greet__info {
-  position: absolute;
-  width: 460px;
-  height: 72px;
-  margin: 156px 0px 94px 0px;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
-  display: flex;
-  align-items: center;
   color: #cdcdcd;
+  padding: 42px 0px;
 }
 
-.seach-friend {
-  background: #f1cdb3;
-  border-radius: 28px;
-  border-color: transparent;
-  display: flex;
+.greet__seach-friend {
   padding: 15px 45px;
-  margin: 266px 248px 0px 0px;
+  background: #f1cdb3;
+  border-radius: 100px;
+  border: none;
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 130%;
-  letter-spacing: 0.06em;
   color: #292929;
 }
 
-body {
-  background:  radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
- 
+.greet__image-pet {
+  max-width: 60%;
+  padding: 0px 40px 0px 0px;
 }
 
-.about-the-shelter {
-  position: absolute;
-  width: 1280px;
-  height: 588px;
-  top: 908px;
-  background: #FFFFFF;
-  /* лэфт и топ как делать отступы от соседних блоков, а не от краев страницы */
-}
-
-.about-the-shelter__title {
-  position: absolute;
-  width: 370px;
-  height: 90px;
-  margin: 94px 275px 404px 635px;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.06em;
-  color: #545454;
-}
-
-.about-the-shelter__info.info {
-  position: absolute;
-  width: 430px;
-  height: 96px;
-  margin: 209px 215px 283px 635px;
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 160%;
-  color: #4c4c4c;
-}
-
-.about-the-shelter__info.info-two {
-  position: absolute;
-  width: 430px;
-  height: 144px;
-  margin: 330px 215px 114px 635px;
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 160%;
-  display: flex;
-  align-items: center;
-  color: #4c4c4c;
-}
-
-.img-section {
-  position: absolute;
-  width: 300px;
-  height: 408px;
-  margin: 80px 765px 100px 215px;
-}
-
-.our-pets {
-  position: absolute;
-  width: 1280px;
-  height: 877px;
-  top: 1496px;
-  background: #F6F6F6;
-}
-
-.our-pets__title {
-  position: absolute;
-  width: 400px;
-  height: 90px;
-  margin: 80px 440px 707px 440px;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #545454;
-}
-
-.pets__katrine {
-  position: absolute;
-  width: 270px;
-  height: 435px;
-  margin: 230px 865px 212px 145px;
-  background: #fafafa;
-  border-radius: 9px;
-}
-
-.pets__jennifer {
-  position: absolute;
-  width: 270px;
-  height: 435px;
-  margin: 230px 505px 212px 505px;
-  background: #fafafa;
-  border-radius: 9px;
-}
-
-.pets__woody {
-  position: absolute;
-  width: 270px;
-  height: 435px;
-  margin: 230px 145px 212px 865px;
-  background: #fafafa;
-  border-radius: 9px;
-}
-
-.pets-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px 45px;
-  position: absolute;
-  left: 41.5px;
-  top: 353px;
-  border: 2px solid #f1cdb3;
-  border-radius: 100px;
-  width: 97px;
-  height: 22px;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
-  color: #292929;
-}
-
-.pets__katrine {
-  /* не смог название сместить вниз */
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #545454;
-}
-
-.pets__jennifer {
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #545454;
-}
-
-.pets__woody {
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #545454;
-}
-
-.our-pets__button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px 45px;
-  gap: 10px;
-  position: absolute;
-  width: 261px;
-  height: 52px;
-  left: 510px;
-  top: 725px;
-  background: #f1cdb3;
-  border-radius: 100px;
-  border-color: transparent;
-  color: #292929;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-}
-
-.info-help-shelters {
-  position: absolute;
-  width: 1280px;
-  height: 611px;
-  top: 2373px;
-  background: #ffffff;
-}
-
-.info-help-shelters__title {
-  position: absolute;
-  width: 308px;
-  height: 90px;
-  margin: 80px 486px 441px 486px;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #545454;
-}
-
-.list-help-shelters {
-  list-style-type: none;
-  width: 82px;
-  height: 23px;
-  left: 0px;
-  top: 90px;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 115%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* текст не по центру */
-  letter-spacing: 0.06em;
-  color: #545454;
-}
-
-/* иконки и фигур смещены */
-
-.card-one {
-  position: absolute;
-  width: 82px;
-  height: 113px;
-  margin: 230px 1071px 268px 127px;
-}
-
-.card-two {
-  position: absolute;
-  width: 150px;
-  height: 113px;
-  margin: 230px 801px 268px 329px;
-}
-
-.card-three {
-  position: absolute;
-  width: 60px;
-  height: 113px;
-  margin: 230px 621px 268px 599px;
-}
-
-.card-four {
-  position: absolute;
-  width: 153px;
-  height: 113px;
-  margin: 230px 348px 268px 779px;
-}
-
-.card-five {
-  position: absolute;
-  width: 101px;
-  height: 113px;
-  margin: 230px 127px 268px 1052px;
-}
-
-.card-six {
-  position: absolute;
-  width: 89px;
-  height: 113px;
-  margin: 398px 980px 100px 211px;
-}
-
-.card-seven {
-  position: absolute;
-  width: 101px;
-  height: 113px;
-  margin: 398px 759px 100px 420px;
-}
-
-.card-eight {
-  position: absolute;
-  width: 165px;
-  height: 113px;
-  margin: 398px 474px 100px 641px;
-}
-
-.card-nine {
-  position: absolute;
-  width: 143px;
-  height: 113px;
-  margin: 398px 211px 100px 926px;
-}
-
-.list-help-shelters__info{
-  position: absolute;
-  height: 23px;
-  left: 0px;
-  top: 90px;
-  font-family: 'Georgia';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 115%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #545454;
-}
-
-.donation-info{
-  position: absolute;
-  width: 1280px;
-height: 462px;
-top: 2984px;
-background: #F6F6F6;
-}
-
-.donation-info__title{
-  position: absolute;
-  width: 300px;
-  height: 90px;
-margin: 80px 262px 292px 718px;
-  font-family: 'Georgia';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.06em;
-  color: #545454;
-}
-
-.donation-info__card{
-  position: absolute;
-  width: 307px;
-  height: 17px;
-  margin: 190px 255px 255px 718px;
-  font-family: 'Georgia';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  /* поменял фонт сайз */
-  line-height: 110%;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.06em;
-  color: #545454;
-}
-
-.donation-data{
-  display: flex;
-flex-direction: column;
-align-items: center;
-padding: 10px 15px;
-gap: 10px;
-position: absolute;
-width: 349px;
-height: 43px;
-margin: 227px 213px 192px 718px;
-background: #F1CDB3;
-border-radius: 9px;
-}
-
-.donation-data__requisites{
-  position: absolute;
-width: 274px;
-height: 23px;
-left: 60px;
-top: 10px;
-font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 115%;
-display: flex;
-align-items: center;
-color: #545454;
-}
-
-.donation-data__image{
-  position: absolute;
-width: 30px;
-height: 23px;
-left: 15px;
-top: 10px;
-}
-
-
-.donation-info__text{
-  position: absolute;
-width: 380px;
-height: 72px;
-margin: 290px 182px 100px 718px;
-font-family: 'Arial';
-font-style: italic;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-display: flex;
-align-items: center;
-color: #B2B2B2;
-}
-
-.donation-image{
-  position: absolute;
-width: 505px;
-height: 261px;
-margin: 91px 592px 110px 183px;
-}
-
-.footer{
-  position: absolute;
-height: 350px;
-top: 3446px;
-}
-
-.footer__image-pet{
-  position: absolute;
-width: 300px;
-height: 310px;
-margin: 40px 40px 0px 940px;
-}
-
-body{
-  width: 1280px;
-  height: 3796px ;
-  /* после поменялся фон */
+@media screen and (max-width: 768px) {
+  .greet {
+    flex-direction: column;
+  }
 }
