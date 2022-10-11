@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .capital-page {
   background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
     #211f20;
@@ -11,9 +16,15 @@
 
 .header {
   display: flex;
+  justify-content: space-between;
   padding: 60px 40px;
-  max-width: 1280px;
   width: 100%;
+}
+
+hgroup {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
 }
 
 .header__logo {
@@ -25,8 +36,7 @@
   color: #f1cdb3;
 }
 
-.title-explanation {
-  padding-top: 5px;
+.header-explanation {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -35,43 +45,45 @@
   color: #ffffff;
 }
 
-hgroup {
-  width: 30%;
-  min-width: 180px;
-}
-
 .header__nav {
-  width: 70%;
+  display: flex;
+  align-items: center;
 }
 
 .navigation__list {
   display: flex;
-  justify-content: flex-end;
   list-style-type: none;
-  gap: 35px;
-  /* text-decoration: none; почему не работает? */
 }
 
 .navigation__link {
-  padding-top: 16px;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
-  /* color: #CDCDCD;   почему не работает? */
+}
+
+.property-link {
+  text-decoration: none;
+  color: #cdcdcd;
+}
+
+.navigation__link + .navigation__link {
+  margin-left: 35px;
 }
 
 .greet {
   display: flex;
-  max-width: 1280px;
+  justify-content: space-between;
+  padding: 0px 40px;
 }
 
 .greet__block {
-  max-width: 50%;
-  padding: 223px 42px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 460px;
 }
-/* сумма 110 %, иначе остается пространствво во флекс контейнере */
 
 .greet__title {
   font-family: "Georgia";
@@ -89,10 +101,12 @@ hgroup {
   font-size: 15px;
   line-height: 160%;
   color: #cdcdcd;
-  padding: 42px 0px;
+  margin: 42px 0px;
 }
 
 .greet__seach-friend {
+  width: 207px;
+  height: 52px;
   padding: 15px 45px;
   background: #f1cdb3;
   border-radius: 100px;
@@ -103,11 +117,6 @@ hgroup {
   font-size: 17px;
   line-height: 130%;
   color: #292929;
-}
-
-.greet__image-pet {
-  max-width: 60%;
-  padding: 0px 40px 0px 0px;
 }
 
 @media screen and (max-width: 768px) {
