@@ -9,7 +9,8 @@ html {
   margin: 0 auto;
 }
 
-.capital-page {
+.capital-page,
+.footer {
   background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
     #211f20;
 }
@@ -74,8 +75,8 @@ hgroup {
 
 .greet {
   display: flex;
-  justify-content: space-between;
-  padding: 0px 40px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .greet__block {
@@ -119,8 +120,271 @@ hgroup {
   color: #292929;
 }
 
-@media screen and (max-width: 768px) {
-  .greet {
-    flex-direction: column;
-  }
+
+.about-the-shelter {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 80px 0px 100px 0px;
+}
+
+.info-about-the-shelter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 430px;
+}
+
+.info-about-the-shelter__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
+}
+
+.info-about-the-shelter__paragraph-one,
+.info-about-the-shelter__paragraph-two {
+  padding-top: 25px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4c4c4c;
+}
+
+
+.our-friends {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0px 100px 0px;
+  background: #F6F6F6;
+}
+
+.our-friends__title {
+  align-self: center;
+  text-align: center;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
+}
+
+.pets {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.pets__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #545454;
+  background: #fafafa;
+}
+/* не смог сдвинуть название карточек вниз */
+
+.pets__card-button {
+  margin: 30px 0px;
+  text-decoration: none;
+  padding: 15px 45px;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
+}
+
+.button-carousel{
+  align-self: center;
+  padding: 19px 19px;
+  border: 2px solid #F1CDB3;
+border-radius: 50%;
+background-color: none;
+}
+
+.our-pets__button {
+  align-self: center;
+  padding: 15px 45px;
+  background: #f1cdb3;
+  border-radius: 100px;
+  border: none;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
+}
+
+.info-help-shelters{
+  margin: 80px 0px 100px 0px;
+}
+
+.info-help-shelters__title{
+  text-align: center;
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+color: #545454;
+}
+
+.list-help-shelters{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.icon-help{
+  margin-top: 60px;
+  list-style-type: none;
+}
+
+.icon-help__info{
+  margin-top: 30px;
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+color: #545454;
+}
+
+.icon-help__card{
+  min-width: 220px;
+  text-align: center;
+}
+
+.donation-info{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 90px 0px;
+  background: #F6F6F6;
+}
+
+.donation-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 380px;
+  min-width: 300px;
+}
+
+.donation-image{
+  background-size: cover;
+}
+
+.donation-page__title{
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+color: #545454;
+}
+
+.donation-page__card{
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+color: #545454;
+}
+
+.donation-data{
+  display: flex;
+  padding: 10px 15px;
+  background: #F1CDB3;
+  border-radius: 9px;
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+}
+
+.donation-data__image{
+  margin: 0px 15px;
+}
+
+.donation-page__text{
+  font-family: 'Arial';
+font-style: italic;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #B2B2B2;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  flex-wrap: wrap;
+}
+
+.questions,
+.address{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.questions__title,
+.address__title{
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+color: #FFFFFF;
+}
+
+.email-shelters,
+.phone-shelters,
+.address-boston,
+.address-london{
+  display: flex;
+  align-items: center;
+}
+
+.email-shelters__icon,
+.phone-shelters__icon,
+.address-boston__image,
+.address-london__image{
+  margin-right: 20px;
+}
+
+.email-shelters__address,
+.phone-shelters__number,
+.address-boston__paragraph,
+.address-london__paragraph{
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+text-decoration: none;
+color: #F1CDB3;
 }

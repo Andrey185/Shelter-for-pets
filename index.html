@@ -36,15 +36,16 @@
       <img class="greet__image-pet" src="img/start-screen-puppy.png" alt="image didn't load" />
   </div>
     </section>
-    <!-- <section class="about-the-shelter">
-      <h1 class="about-the-shelter__title">About the shelter<br>“Cozy House”</h1>
-      <p class="about-the-shelter__info info">
+    <section class="about-the-shelter">
+      <div class="info-about-the-shelter">
+        <h1 class="info-about-the-shelter__title">About the shelter<br>“Cozy House”</h1>
+      <p class="info-about-the-shelter__paragraph-one">
         Currently we have 121 dogs and 342 cats on our hands and statistics show
         that only 20% of them will find a family. The others will continue to
         live with us and will be waiting for a lucky chance to become dearly
         loved.
       </p>
-      <p class="about-the-shelter__info info-two">
+      <p class="info-about-the-shelter__paragraph-two">
         We feed our wards with the best food and make sure that they do not get
         sick, feel comfortable (including psychologically) and well. We are
         supported by 87 volunteers and 28 employees of various skill levels.
@@ -52,26 +53,35 @@
         the animals, they become attached to the pets and would hardly ever
         leave them alone.
       </p>
+    </div>
       <img class="img-section" src="img/about-pets.png" alt="" />
     </section>
-    <section class="our-pets">
-      <h1 class="our-pets__title">Our friends who are looking for a house</h1>
-      <article class="pets__katrine">
-        katrine
+    <section class="our-friends">
+      <h1 class="our-friends__title">Our friends who<br>are looking for a house</h1>
+      <div class="pets">
+        <button class="button-carousel">
+          <img src="icon/Arrow.svg" alt="image didn't load">
+        </button>
+        <article class="pets__card">
         <img class="pets__katrine-image" src="img/pets-katrine.png" alt="image didn't load" />
-        <a class="pets__katrine-button pets-button" href="#openModal">Learn more</a>
+        Katrine
+        <a class="pets__card-button pets-button" href="#openModal">Learn more</a>
       </article>
-      <article class="pets__jennifer">
-        Jennifer
+      <article class="pets__card">
         <img class="pets__jennifer-image" src="img/pets-jennifer.png" alt="image didn't load" />
-        <a class="pets__jennifer-button pets-button" href="#openModal">Learn more</a>
+        Jennifer
+        <a class="pets__card-button pets-button" href="#openModal">Learn more</a>
       </article>
-      <article class="pets__woody">
-        Woody
+      <article class="pets__card">
         <img class="pets__woody-image" src="img/pets-woody.png" alt="image didn't load" />
-        <a class="pets__woody-button pets-button" href="#openModal">Learn more</a>
+        Woody
+        <a class="pets__card-button pets-button" href="#openModal">Learn more</a>
       </article>
-      <article class="pets__sophia">
+      <button class="button-carousel">
+        <img src="icon/Arrowright.svg" alt="image didn't load">
+      </button>
+    </div>
+      <!-- <article class="pets__sophia">
         Sophia
         <img class="pets__sophia-image" src="img/pets-sophia.png" alt="image didn't load" />
         <a class="pets__sophia-button pets-button" href="#openModal">Learn more</a>
@@ -95,95 +105,111 @@
         Freddie
         <img class="pets__freddie-image" src="img/pets-freddie.png" alt="image didn't load" />
         <a class="pets__freddie-button pets-button" href="#openModal">Learn more</a>
-      </article>
+      </article> -->
       <button class="our-pets__button">Get to know the rest</button>
     </section>
     <section class="info-help-shelters">
       <h1 class="info-help-shelters__title">How you can help<br>our shelter</h1>
       <ul class="list-help-shelters">
-        <li>
-          <figure class="list-help-shelters__card card-one">
-            <img class="list-help-shelters__image" src="icon/icon-pet-food.svg" alt="image didn't load" />
-            <figcaption class="list-help-shelters__info">Pet food</figcaption>
+        <li class="icon-help">
+          <figure class="icon-help__card">
+            <img src="icon/icon-pet-food.svg" alt="image didn't load" />
+            <figcaption class="icon-help__info">Pet food</figcaption>
           </figure>
         </li>
-        <li>
-          <figure class="list-help-shelters__card card-two">
-            <img class="list-help-shelters__image" src="icon/icon-transportation.svg" alt="image didn't load" />
-            <figcaption class="list-help-shelters__info">Transportation</figcaption>
+        <li class="icon-help">
+          <figure class="icon-help__card">
+            <img src="icon/icon-transportation.svg" alt="image didn't load" />
+            <figcaption class="icon-help__info">Transportation</figcaption>
           </figure>
         </li>
-        <li>
-          <figure class="list-help-shelters__card card-three">
-            <img class="list-help-shelters__image" src="icon/icon-toys.svg" alt="image didn't load" />
-            <figcaption class="list-help-shelters__info">Toys</figcaption>
+        <li class="icon-help">
+          <figure class="icon-help__card">
+            <img src="icon/icon-toys.svg" alt="image didn't load" />
+            <figcaption class="icon-help__info">Toys</figcaption>
           </figure>
         </li>
-        <li>
-          <figure class="list-help-shelters__card card-four">
-            <img class="list-help-shelters__image" src="icon/icon-bowls-and-cups.svg" alt="image didn't load" />
-            <figcaption class="list-help-shelters__info">Bowls and cups</figcaption>
+        <li class="icon-help">
+          <figure class="icon-help__card">
+            <img src="icon/icon-bowls-and-cups.svg" alt="image didn't load" />
+            <figcaption class="icon-help__info">Bowls and cups</figcaption>
           </figure>
         </li>
-        <li>
-          <figure class="list-help-shelters__card card-five">
-            <img class="list-help-shelters__image" src="icon/icon-shampoos.svg" alt="image didn't load" />
-            <figcaption class="list-help-shelters__info">Shampoos</figcaption>
+        <li class="icon-help">
+          <figure class="icon-help__card">
+            <img src="icon/icon-shampoos.svg" alt="image didn't load" />
+            <figcaption class="icon-help__info">Shampoos</figcaption>
           </figure>
         </li>
-        <li>
-          <figure class="list-help-shelters__card card-six">
-            <img class="list-help-shelters__image" src="icon/icon-vitamins.svg" alt="image didn't load" />
-            <figcaption class="list-help-shelters__info">Vitamins</figcaption>
+        <li class="icon-help">
+          <figure class="icon-help__card">
+            <img src="icon/icon-vitamins.svg" alt="image didn't load" />
+            <figcaption class="icon-help__info">Vitamins</figcaption>
           </figure>
         </li>
-        <li>
-          <figure class="list-help-shelters__card card-seven">
-            <img class="list-help-shelters__image" src="icon/icon-medicines.svg" alt="image didn't load" />
-            <figcaption class="list-help-shelters__info">Medicines</figcaption>
+        <li class="icon-help">
+          <figure class="icon-help__card">
+            <img src="icon/icon-medicines.svg" alt="image didn't load" />
+            <figcaption class="icon-help__info">Medicines</figcaption>
           </figure>
         </li>
-        <li>
-          <figure class="list-help-shelters__card card-eight">
-            <img class="list-help-shelters__image" src="icon/collars-or-leashes.svg" alt="image didn't load" />
-            <figcaption class="list-help-shelters__info">Collars or leashes</figcaption>
+        <li class="icon-help">
+          <figure class="icon-help__card">
+            <img src="icon/collars-or-leashes.svg" alt="image didn't load" />
+            <figcaption class="icon-help__info">Collars or leashes</figcaption>
           </figure>
         </li>
-        <li>
-          <figure class="list-help-shelters__card card-nine">
-            <img class="list-help-shelters__image" src="icon/icon-sleeping-area.svg" alt="image didn't load" />
-            <figcaption class="list-help-shelters__info">Sleeping area</figcaption>
+        <li class="icon-help">
+          <figure class="icon-help__card">
+            <img src="icon/icon-sleeping-area.svg" alt="image didn't load" />
+            <figcaption class="icon-help__info">Sleeping area</figcaption>
           </figure>
         </li>
       </ul>
     </section>
     <section class="donation-info">
-      <h1 class="donation-info__title">You can also make a donation</h1>
-      <p class="donation-info__card">Name of the bank / Type of bank account</p>
+      <div class="donation-page">
+        <h1 class="donation-page__title">You can also<br>make a donation</h1>
+      <p class="donation-page__card">Name of the bank / Type of bank account</p>
       <p>
         <figure class="donation-data">
           <img class="donation-data__image" src="icon/credit-card.svg" alt="image didn't load" />
           <figcaption class="donation-data__requisites">8380 2880 8028 8791 7435</figcaption>
         </figure>
       </p>
-      <p class="donation-info__text">
+      <p class="donation-page__text">
         Legal information and lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam.
         Praesent ultrices maximus tortor et vulputate. Interdum et malesuada
         fames ac ante ipsum primis in faucibus.
       </p>
+    </div>
       <img class="donation-image" src="img/donation-dog.png" alt="image didn't load" />
     </section>
     <footer class="footer">
-      <h1 class="footer__title title">For questions and suggestions</h1>
-      <a class="footer__email" href="mailto:rimmon9@gmail.com">email@shelter.com</a>
-      <a class="footer__phone" href="tel:+13 674 567 75 54">+13 674 567 75 54</a>
-      <h1 class="footer__title title-two">We are waiting for your visit</h1>
-      <img class="footer__image-icon image-icon" src="icon/pin.svg" alt="" />
-      <p class="footer__adress adress">1 Central Street, Boston (entrance from the store)</p>
-      <img class="footer__image-icon image-icon-two" src="icon/pin.svg" alt="" />
-      <p class="footer__adress adress-two">18 South Park, London</p>
+      <div class="questions">
+        <h1 class="questions__title">For questions<br>and suggestions</h1>
+        <div class="email-shelters">
+          <img class="email-shelters__icon" src="icon/icon-email.svg" alt="image didn't load">
+      <a class="email-shelters__address" href="mailto:rimmon9@gmail.com">email@shelter.com</a>
+    </div>
+    <div class="phone-shelters">
+      <img class="phone-shelters__icon" src="icon/icon-phone.svg" alt="image didn't load">
+      <a class="phone-shelters__number" href="tel:+13 674 567 75 54">+13 674 567 75 54</a>
+    </div>
+    </div>
+      <div class="address">
+        <h1 class="address__title">We are waiting<br>for your visit</h1>
+        <div class="address-boston" >
+      <img class="address-boston__image" src="icon/pin.svg" alt="" />
+      <p class="address-boston__paragraph">1 Central Street, Boston<br>(entrance from the store)</p>
+    </div>
+    <div class="address-london">
+      <img class="address-london__image" src="icon/pin.svg" alt="" />
+      <p class="address-london__paragraph">18 South Park, London</p>
+    </div>
+    </div>
       <img class="footer__image-pet" src="img/footer-puppy.png" alt="" />
     </footer>
   </body>
-</html> -->
+</html>
