@@ -120,6 +120,10 @@ hgroup {
   color: #292929;
 }
 
+.greet__image-pet {
+  max-width: 698px;
+  width: 100%;
+}
 
 .about-the-shelter {
   display: flex;
@@ -147,7 +151,7 @@ hgroup {
 
 .info-about-the-shelter__paragraph-one,
 .info-about-the-shelter__paragraph-two {
-  padding-top: 25px;
+  margin-top: 25px;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -156,12 +160,11 @@ hgroup {
   color: #4c4c4c;
 }
 
-
 .our-friends {
   display: flex;
   flex-direction: column;
   padding: 80px 0px 100px 0px;
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 .our-friends__title {
@@ -211,12 +214,12 @@ hgroup {
   color: #292929;
 }
 
-.button-carousel{
+.button-carousel {
   align-self: center;
   padding: 19px 19px;
-  border: 2px solid #F1CDB3;
-border-radius: 50%;
-background-color: none;
+  border: 2px solid #f1cdb3;
+  border-radius: 50%;
+  background-color: none;
 }
 
 .our-pets__button {
@@ -233,111 +236,113 @@ background-color: none;
   color: #292929;
 }
 
-.info-help-shelters{
+.info-help-shelters {
   margin: 80px 0px 100px 0px;
 }
 
-.info-help-shelters__title{
+.info-help-shelters__title {
   text-align: center;
-  font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 35px;
-line-height: 130%;
-color: #545454;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
 }
 
-.list-help-shelters{
+.list-help-shelters {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.icon-help{
+.icon-help {
   margin-top: 60px;
   list-style-type: none;
 }
 
-.icon-help__info{
+.icon-help__info {
   margin-top: 30px;
-  font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 115%;
-color: #545454;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  color: #545454;
 }
 
-.icon-help__card{
+.icon-help__card {
   min-width: 220px;
   text-align: center;
 }
 
-.donation-info{
+.donation-info {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 90px 0px;
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
-.donation-page{
+.donation-page {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 380px;
-  min-width: 300px;
 }
 
-.donation-image{
+.donation-image {
   background-size: cover;
+  max-width: 505px;
+  max-height: 261px;
+  width: 100%;
 }
 
-.donation-page__title{
-  font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 35px;
-line-height: 130%;
-color: #545454;
+.donation-page__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
 }
 
-.donation-page__card{
-  font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 110%;
-color: #545454;
+.donation-page__card {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  color: #545454;
 }
 
-.donation-data{
+.donation-data {
   display: flex;
   padding: 10px 15px;
-  background: #F1CDB3;
+  background: #f1cdb3;
   border-radius: 9px;
-  font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 115%;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
 }
 
-.donation-data__image{
-  margin: 0px 15px;
+.donation-data__image {
+  margin-right: 15px;
 }
 
-.donation-page__text{
-  font-family: 'Arial';
-font-style: italic;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-color: #B2B2B2;
+.donation-page__text {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
@@ -345,26 +350,26 @@ color: #B2B2B2;
 }
 
 .questions,
-.address{
-display: flex;
-flex-direction: column;
-justify-content: space-around;
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .questions__title,
-.address__title{
-  font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 35px;
-line-height: 130%;
-color: #FFFFFF;
+.address__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #ffffff;
 }
 
 .email-shelters,
 .phone-shelters,
 .address-boston,
-.address-london{
+.address-london {
   display: flex;
   align-items: center;
 }
@@ -372,19 +377,208 @@ color: #FFFFFF;
 .email-shelters__icon,
 .phone-shelters__icon,
 .address-boston__image,
-.address-london__image{
+.address-london__image {
   margin-right: 20px;
 }
 
 .email-shelters__address,
 .phone-shelters__number,
 .address-boston__paragraph,
-.address-london__paragraph{
-  font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 115%;
-text-decoration: none;
-color: #F1CDB3;
+.address-london__paragraph {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  text-decoration: none;
+  color: #f1cdb3;
+}
+
+.hamb {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #545454;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .greet__seach-friend {
+    margin-bottom: 100px;
+    align-self: center;
+  }
+  .greet__image-pet {
+    margin-left: 169px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .greet__seach-friend {
+    margin-bottom: 100px;
+    align-self: center;
+  }
+
+  .name-woody {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 884px) {
+  .donation-page {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .hamb {
+    display: block;
+  }
+
+  .header__nav {
+    position: fixed;
+    display: block;
+    padding: 20px;
+    opacity: 0.8;
+    width: 100%;
+    top: 120px;
+    left: 0px;
+    background: red;
+  }
+
+  .navigation__list {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    font-size: 32px;
+  }
+
+  .navigation__link + .navigation__link,
+  .navigation__link {
+    margin-left: 0px;
+    font-size: 32px;
+  }
+
+  .greet__block {
+    margin: 0px 20px 0px 20px;
+  }
+
+  .greet__title {
+    text-align: center;
+  }
+
+  .greet__seach-friend {
+    margin-bottom: 100px;
+    align-self: center;
+  }
+
+  .info-about-the-shelter {
+    margin: 0px 20px 80px 20px;
+  }
+
+  .name-woody {
+    display: none;
+  }
+
+  .name-jennifer {
+    display: none;
+  }
+
+  .donation-page {
+    gap: 15px;
+    margin: 0px 20px;
+  }
+  .donation-image {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .hamb {
+    display: block;
+  }
+
+  .header__nav {
+    position: fixed;
+    display: block;
+    padding: 20px;
+    opacity: 0.8;
+    width: 100%;
+    top: 120px;
+    left: 0px;
+    background: red;
+  }
+
+  .navigation__list {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    font-size: 32px;
+  }
+
+  .navigation__link + .navigation__link,
+  .navigation__link {
+    margin-left: 0px;
+    font-size: 32px;
+  }
+
+  .info-about-the-shelter {
+    margin: 0px 20px 80px 20px;
+  }
+
+  .greet__block {
+    margin: 0px 20px 0px 20px;
+  }
+
+  .greet__seach-friend {
+    margin-bottom: 100px;
+    align-self: center;
+  }
+
+  .name-woody {
+    display: none;
+  }
+
+  .name-jennifer {
+    display: none;
+  }
+  .donation-page {
+    gap: 15px;
+    margin: 0px 20px;
+  }
+
+  .donation-image {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .button-carousel {
+    order: 1;
+  }
+
+  .name-katrine {
+    margin: 0px 100px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 810px) {
+  .footer,
+  .questions,
+  .address {
+    gap: 30px;
+  }
+
+  .footer__image-pet {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 541px) {
+  .address {
+    margin-top: 30px;
+  }
 }
