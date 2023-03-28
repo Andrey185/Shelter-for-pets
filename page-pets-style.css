@@ -13,7 +13,7 @@ html {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 60px 40px;
+  padding: 35px 40px;
   width: 100%;
   background: #ffffff;
 }
@@ -110,9 +110,9 @@ hgroup {
   line-height: 23px;
   color: #545454;
   background: #fafafa;
-  cursor: pointer
+  cursor: pointer;
 }
-.logo{
+.logo {
   text-decoration: none;
   cursor: pointer;
 }
@@ -144,6 +144,9 @@ hgroup {
   border: 2px solid #f1cdb3;
   border-radius: 50%;
 }
+.pets-button {
+  margin-top: 55px;
+}
 
 .button-left {
   border: 2px solid #cdcdcd;
@@ -155,7 +158,9 @@ hgroup {
 
 .footer {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: center;
+  gap: 200px;
   padding-top: 40px;
   flex-wrap: wrap;
   background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
@@ -185,6 +190,7 @@ hgroup {
 .address-london {
   display: flex;
   align-items: center;
+  padding-bottom: 37px;
 }
 
 .email-shelters__icon,
@@ -207,27 +213,27 @@ hgroup {
   color: #f1cdb3;
 }
 
-.hamb{
+.hamb {
   display: none;
 }
-.google-map{
+.google-map {
   text-decoration: none;
   color: #f1cdb3;
 }
-a:hover{
+a:hover {
   color: red;
   transition: 1s;
 }
-.property-link.our-pets{
+.property-link.our-pets {
   color: red;
 }
-.navigation-button.button-right:hover{
-cursor: pointer;
-background-color: #f1cdb3;
-transition: 1s;
+.navigation-button.button-right:hover {
+  cursor: pointer;
+  background-color: #f1cdb3;
+  transition: 1s;
 }
 
-.bar{
+.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -251,11 +257,11 @@ transition: 1s;
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-.hamb{
-  display: block;
-}
+  .hamb {
+    display: block;
+  }
 
-  .header__nav{
+  .header__nav {
     position: fixed;
     display: block;
     padding: 20px;
@@ -263,7 +269,7 @@ transition: 1s;
     width: 100%;
     top: 120px;
     left: 0px;
-    background: aquamarine
+    background: aquamarine;
   }
 
   .navigation__list {
@@ -281,35 +287,34 @@ transition: 1s;
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
-  .hamb{
+  .hamb {
     display: block;
   }
-  
-    .header__nav{
-      position: fixed;
-      display: block;
-      padding: 20px;
-      opacity: 0.8;
-      width: 100%;
-      top: 120px;
-      left: 0px;
-      background: aquamarine
-    }
-  
-    .navigation__list {
-      flex-direction: column;
-      text-align: center;
-      gap: 40px;
-      font-size: 32px;
-    }
-  
-    .navigation__link + .navigation__link,
-    .navigation__link {
-      margin-left: 0px;
-      font-size: 32px;
-    }
-  
-  
+
+  .header__nav {
+    position: fixed;
+    display: block;
+    padding: 20px;
+    opacity: 0.8;
+    width: 100%;
+    top: 120px;
+    left: 0px;
+    background: aquamarine;
+  }
+
+  .navigation__list {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    font-size: 32px;
+  }
+
+  .navigation__link + .navigation__link,
+  .navigation__link {
+    margin-left: 0px;
+    font-size: 32px;
+  }
+
   .navigation__list {
     flex-direction: column;
   }
