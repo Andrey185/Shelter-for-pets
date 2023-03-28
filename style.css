@@ -100,6 +100,8 @@ a:hover{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 58px;
+  /* padding-bottom: 75px; */
 }
 
 .not-only__block {
@@ -108,6 +110,7 @@ a:hover{
   justify-content: center;
   max-width: 460px;
   padding-left: 40px;
+  padding-bottom: 75px;
 }
 
 .not-only__title {
@@ -146,14 +149,17 @@ a:hover{
 
 .not-only__image-pet {
   max-width: 698px;
-  /* width: 100%; */
+  width: 100%;
   padding-right: 40px;
+  padding-top: 75px;
 }
 
 .about {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  gap: 130px;
   flex-wrap: wrap;
   padding: 80px 0px 100px 0px;
 }
@@ -275,9 +281,12 @@ button{
   line-height: 130%;
   color: #292929;
 }
+.pets-button{
+  margin-top: 55px;
+}
 
 .help {
-  margin: 80px 0px 100px 0px;
+  margin: 80px 0px 88px 0px;
 }
 
 .info-help-shelters__title {
@@ -293,7 +302,8 @@ button{
 .list-help-shelters {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
 }
 
 .icon-help {
@@ -319,9 +329,11 @@ button{
 .in-addition {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  gap: 35px;
   flex-wrap: wrap;
-  padding: 90px 0px;
+  padding: 100px 0px;
   background: #f6f6f6;
 }
 
@@ -330,6 +342,7 @@ button{
   flex-direction: column;
   justify-content: space-between;
   max-width: 380px;
+  margin-bottom: 10px;
 }
 
 .donation-image {
@@ -384,7 +397,9 @@ button{
 
 .footer {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: center;
+  gap: 200px;
   padding-top: 40px;
   flex-wrap: wrap;
 }
@@ -432,6 +447,7 @@ button{
   line-height: 115%;
   text-decoration: none;
   color: #f1cdb3;
+  padding-bottom: 37px;
 }
 
 .hamb {
