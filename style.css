@@ -1,0 +1,640 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  scroll-behavior: smooth;
+}
+
+.capital-page,
+.footer {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
+    #211f20;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  width: 100%;
+}
+
+hgroup {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+}
+
+.header__logo {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  color: #f1cdb3;
+}
+
+.header-explanation {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.navigation__link {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.property-link {
+  text-decoration: none;
+  color: #cdcdcd;
+}
+.property-link__shelter{
+  text-decoration: none;
+  color: red;
+}
+
+.google-map{
+  text-decoration: none;
+  color: #f1cdb3;
+}
+a:hover{
+  color: red;
+  transition: 1s;
+}
+.our-pets__link,
+.not-only__link,
+.logo,
+.donation{
+  text-decoration: none;
+  color: black;
+}
+
+
+.navigation__link + .navigation__link {
+  margin-left: 35px;
+}
+
+
+.not-only {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 58px;
+  /* padding-bottom: 75px; */
+}
+
+.not-only__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 460px;
+  padding-left: 40px;
+  padding-bottom: 75px;
+}
+
+.not-only__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.not-only__info {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #cdcdcd;
+  margin: 42px 0px;
+}
+
+.not-only__seach-friend {
+  width: 207px;
+  height: 52px;
+  padding: 15px 45px;
+  background: #f1cdb3;
+  border-radius: 100px;
+  border: none;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
+}
+
+.not-only__image-pet {
+  max-width: 698px;
+  width: 100%;
+  padding-right: 40px;
+  padding-top: 75px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row-reverse;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  gap: 130px;
+  flex-wrap: wrap;
+  padding: 80px 0px 100px 0px;
+}
+
+.info-about-the-shelter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 430px;
+}
+
+.info-about-the-shelter__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
+}
+
+.info-about-the-shelter__paragraph-one,
+.info-about-the-shelter__paragraph-two {
+  margin-top: 25px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4c4c4c;
+}
+
+.our-friends {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0px 100px 0px;
+  background: #f6f6f6;
+}
+
+.our-friends__title {
+  align-self: center;
+  text-align: center;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
+}
+
+.pets {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.pets__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #545454;
+  background: #fafafa;
+  cursor: pointer
+}
+.name-katrine{
+  cursor: pointer;
+}
+.name-katrine:hover,
+.name-jennifer:hover,
+.name-woody:hover {
+  position: relative;
+  opacity: 1;
+  transform: scale(1.2);
+  transition: 1s;
+}
+button{
+  cursor: pointer;
+}
+
+
+.pets__card-button {
+  margin: 30px 0px;
+  text-decoration: none;
+  padding: 15px 45px;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
+}
+
+.button-carousel {
+  align-self: center;
+  padding: 19px 19px;
+  border: 2px solid #f1cdb3;
+  border-radius: 50%;
+  background-color: none;
+}
+
+.our-pets__button {
+  align-self: center;
+  padding: 15px 45px;
+  background: #f1cdb3;
+  border-radius: 100px;
+  border: none;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
+}
+.pets-button{
+  margin-top: 55px;
+}
+
+.help {
+  margin: 80px 0px 88px 0px;
+}
+
+.info-help-shelters__title {
+  text-align: center;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
+}
+
+.list-help-shelters {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+}
+
+.icon-help {
+  margin-top: 60px;
+  list-style-type: none;
+}
+
+.icon-help__info {
+  margin-top: 30px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  color: #545454;
+}
+
+.icon-help__card {
+  min-width: 220px;
+  text-align: center;
+}
+
+.in-addition {
+  display: flex;
+  flex-direction: row-reverse;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  padding: 100px 0px;
+  background: #f6f6f6;
+}
+
+.donation-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 380px;
+  margin-bottom: 10px;
+}
+
+.donation-image {
+  background-size: cover;
+  max-width: 505px;
+  max-height: 261px;
+  width: 100%;
+}
+
+.donation-page__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
+}
+
+.donation-page__card {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  color: #545454;
+}
+
+.donation-data {
+  display: flex;
+  padding: 10px 15px;
+  background: #f1cdb3;
+  border-radius: 9px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+}
+
+.donation-data__image {
+  margin-right: 15px;
+}
+
+.donation-page__text {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+}
+
+.footer {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: center;
+  gap: 200px;
+  padding-top: 40px;
+  flex-wrap: wrap;
+}
+
+.questions,
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.questions__title,
+.address__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.email-shelters,
+.phone-shelters,
+.address-boston,
+.address-london {
+  display: flex;
+  align-items: center;
+}
+
+.email-shelters__icon,
+.phone-shelters__icon,
+.address-boston__image,
+.address-london__image {
+  margin-right: 20px;
+}
+
+.email-shelters__address,
+.phone-shelters__number,
+.address-boston__paragraph,
+.address-london__paragraph {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  text-decoration: none;
+  color: #f1cdb3;
+  padding-bottom: 37px;
+}
+
+.hamb {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #545454;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .not-only__seach-friend {
+    margin-bottom: 100px;
+    align-self: center;
+  }
+  /* .not-only__image-pet {
+    margin-left: 169px;
+  } */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .not-only__seach-friend {
+    margin-bottom: 100px;
+    align-self: center;
+  }
+
+  .name-woody {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 884px) {
+  .donation-page {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .hamb {
+    display: block;
+  }
+
+  .header__nav {
+    position: fixed;
+    display: block;
+    padding: 20px;
+    opacity: 0.8;
+    width: 100%;
+    top: 120px;
+    left: 0px;
+    background: red;
+  }
+
+  .navigation__list {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    font-size: 32px;
+  }
+
+  .navigation__link + .navigation__link,
+  .navigation__link {
+    margin-left: 0px;
+    font-size: 32px;
+  }
+
+  .not-only__block {
+    margin: 0px 20px 0px 20px;
+  }
+
+  .not-only__title {
+    text-align: center;
+  }
+
+  .not-only__seach-friend {
+    margin-bottom: 100px;
+    align-self: center;
+  }
+
+  .info-about-the-shelter {
+    margin: 0px 20px 80px 20px;
+  }
+
+  .name-woody {
+    display: none;
+  }
+
+  .name-jennifer {
+    display: none;
+  }
+
+  .donation-page {
+    gap: 15px;
+    margin: 0px 20px;
+  }
+  .donation-image {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .hamb {
+    display: block;
+  }
+
+  .header__nav {
+    position: fixed;
+    display: block;
+    padding: 20px;
+    opacity: 0.8;
+    width: 100%;
+    top: 120px;
+    left: 0px;
+    background: red;
+  }
+
+  .navigation__list {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    font-size: 32px;
+  }
+
+  .navigation__link + .navigation__link,
+  .navigation__link {
+    margin-left: 0px;
+    font-size: 32px;
+  }
+
+  .info-about-the-shelter {
+    margin: 0px 20px 80px 20px;
+  }
+
+  .not-only__block {
+    margin: 0px 20px 0px 20px;
+  }
+
+  .not-only__seach-friend {
+    margin-bottom: 100px;
+    align-self: center;
+  }
+
+  .name-woody {
+    display: none;
+  }
+
+  .name-jennifer {
+    display: none;
+  }
+  .donation-page {
+    gap: 15px;
+    margin: 0px 20px;
+  }
+
+  .donation-image {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .button-carousel {
+    order: 1;
+  }
+
+  .name-katrine {
+    margin: 0px 100px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 810px) {
+  .footer,
+  .questions,
+  .address {
+    gap: 30px;
+  }
+
+  .footer__image-pet {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 541px) {
+  .address {
+    margin-top: 30px;
+  }
+}
