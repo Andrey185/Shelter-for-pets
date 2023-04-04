@@ -13,7 +13,7 @@ html {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 35px 40px;
+  padding: 30px 40px;
   width: 100%;
   background: #ffffff;
 }
@@ -28,7 +28,7 @@ hgroup {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 110%;
   color: #545454;
 }
@@ -37,9 +37,10 @@ hgroup {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 15px;
   color: #292929;
+  padding-top: 5px;
 }
 
 .header__nav {
@@ -76,7 +77,7 @@ hgroup {
 }
 
 .our-friends {
-  padding: 80px 0px 100px 0px;
+  padding: 80px 0px 97px 0px;
   background: #f6f6f6;
 }
 
@@ -85,8 +86,8 @@ hgroup {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
+  font-size: 39px;
+  line-height: 120%;
   color: #545454;
 }
 
@@ -126,7 +127,7 @@ hgroup {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 130%;
   color: #292929;
 }
@@ -159,15 +160,82 @@ hgroup {
 .footer {
   display: flex;
   /* justify-content: space-around; */
-  justify-content: center;
-  gap: 200px;
+  /* justify-content: center; */
+  /* gap: 185px; */
   padding-top: 40px;
   flex-wrap: wrap;
   background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
     #211f20;
 }
-
+.questions{
+  margin-left: 40px;
+}
+.address{
+  margin-left: 160px;
+}
 .questions,
+.address {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  /* justify-content: center; */
+}
+
+.questions__title,
+.address__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-top: 13px;
+}
+
+.email-shelters,
+.phone-shelters,
+.address-boston,
+.address-london {
+  display: flex;
+  /* align-items: center; */
+}
+
+.email-shelters{
+  margin-top: 41px;
+}
+.phone-shelters{
+  margin-top: 41px;
+}
+.address-boston{
+  margin-top: 29px;
+}
+.address-london{
+  margin-top: 35px;
+}
+.email-shelters__icon,
+.phone-shelters__icon,
+.address-boston__image,
+.address-london__image {
+  margin-right: 20px;
+}
+
+.email-shelters__address,
+.phone-shelters__number,
+.address-boston__paragraph,
+.address-london__paragraph {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 115%;
+  text-decoration: none;
+  color: #f1cdb3;
+  /* padding-bottom: 37px; */
+}
+.footer__image-pet{
+  margin-left: 176px;
+}
+/* .questions,
 .address {
   display: flex;
   flex-direction: column;
@@ -211,7 +279,7 @@ hgroup {
   line-height: 115%;
   text-decoration: none;
   color: #f1cdb3;
-}
+} */
 
 .hamb {
   display: none;
@@ -263,7 +331,7 @@ a:hover {
 
   .header__nav {
     position: fixed;
-    display: block;
+    display: none;
     padding: 20px;
     opacity: 0.8;
     width: 100%;
@@ -293,7 +361,7 @@ a:hover {
 
   .header__nav {
     position: fixed;
-    display: block;
+    display: none;
     padding: 20px;
     opacity: 0.8;
     width: 100%;
@@ -334,4 +402,87 @@ a:hover {
   .footer__image-pet {
     margin-top: 30px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+.header{
+  padding: 30px;
+}
+.pets{
+  margin: 30px 94px 40px 94px;
+  justify-content: space-between;
+}
+.our-friends{
+  padding: 80px 0px 74px 0px;
+}
+.footer{
+  padding-top: 15px;
+  gap: 0px;
+}
+.questions,
+.address{
+  gap: 0px;
+}
+
+.questions {
+  margin-left: 64px;
+}
+.address{
+margin-left: 60px;
+}
+.footer__image-pet{
+margin-left: 234px;
+padding-top: 61px;
+margin-top: 0px;
+}
+}
+@media (min-width: 320px) and (max-width: 767px){
+  .footer__image-pet{
+    margin-left: 0px;
+    max-width: 260px;
+    width: 100%;
+  }
+  .header{
+    padding: 30px 20px;
+  }
+  .our-friends{
+    padding: 42px 0px 40px 0px;
+  }
+  .pets__friends-title{
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .pets{
+    margin: 42px 0px 42px 0px;
+  }
+  .navigation{
+    gap: 10px;
+  }
+
+  .footer__image-pet{
+    margin-top: 41px;
+    margin-left: 30px;
+    max-width: 260px;
+  }
+  .footer{
+    padding-top: 13px;
+  }
+  .footer,
+  .questions,
+  .address{
+    gap: 0px;
+  }
+  .questions__title,
+  .address__title{
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+  }
+  .address{
+    margin-left: 10px;
+    padding-top: 26px;
+  }
+  .address-boston{
+    margin-top: 37px;
+  }
+
 }
