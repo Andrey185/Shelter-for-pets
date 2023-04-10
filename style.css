@@ -236,22 +236,44 @@ a:hover{
   line-height: 23px;
   color: #545454;
   background: #fafafa;
-  cursor: pointer
+  cursor: pointer;
+  animation: ani 1.5s forwards;
+}
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+.pets__card{
+  display: none;
+}
+
+.pets-wrapper{
+  /* max-width: 990px; */
+  overflow: hidden;
+  
 }
 
 .pets-container{
   display: flex;
   gap: 90px;
+  transition: .2s;
 }
 
 
 
 .name-katrine:hover,
 .name-jennifer:hover,
-.name-woody:hover {
+.name-woody:hover,
+.name-sophia:hover,
+.name-timmy:hover,
+.name-charly:hover,
+.name-scarlett:hover,
+.name-freddie:hover{
   position: relative;
   opacity: 1;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 1s;
 }
 button{
