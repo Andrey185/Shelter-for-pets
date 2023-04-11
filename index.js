@@ -40,12 +40,41 @@
 
 // checkBtns()
 
+const hamb = document.querySelector('.hamb')
+const navigationList = document.querySelector('.navigation__list')
+const navigationLinkHome = document.querySelectorAll('.link-home')
+hamb.addEventListener("click", () => {
+   hamb.classList.toggle('active')
+    navigationList.classList.toggle('active')
+}); 
+navigationLinkHome.forEach((item) => {
+   item.addEventListener("click", () => {
+      hamb.classList.remove('active')
+       navigationList.classList.remove('active')
+   });
+})
+document.addEventListener("click", (e) => {
+   const click = e.composedPath().includes(navigationList&&hamb)
+   if (!click) {
+      navigationList.classList.remove('active')
+      hamb.classList.remove('active')
+   }
+})
+document.addEventListener('scroll', () => {
+   hamb.classList.remove('active')
+    navigationList.classList.remove('active')
+})
+
+
+
+
 
 
 let counter = Math.floor(Math.random() * 9)
 const btnPrev = document.querySelector('.button-prev')
 const btnNext = document.querySelector('.button-next')
 const items = document.querySelectorAll('.pets__card')
+const container = document.querySelectorAll('.pets-container')
 
 const app = () => {
     if (counter===items.length) {
@@ -58,13 +87,22 @@ const app = () => {
     }
     items[counter].style.display = 'flex'
     counter++
-    if (counter===items.length) {
-        counter=0
+    if (document.body.clientWidth>=1200) {
+        if (counter===items.length) {
+            counter=0
+        }
+        items[counter].style.display = 'flex'
+        counter++
     }
-    items[counter].style.display = 'flex'
-    counter++
+
 }
 app()
+
+// window.addEventListener('resize', function(event) {
+//     if (document.body.clientWidth<=1200) {
+        
+//     }
+// }, true);
 
 btnNext.addEventListener('click', () => {
     items.forEach((item) => {
